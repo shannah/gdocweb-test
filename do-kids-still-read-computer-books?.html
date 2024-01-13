@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do kids still read computer books?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    
+.normal_text {
+font-family: Arial;
+font-size: 11.0PT;
+color: #000000;
+line-height: 1.15;
+direction: ltr;
+}
+h1 {
+font-size: 20.0PT;
+padding-top: 20.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h2 {
+font-size: 16.0PT;
+padding-top: 18.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h3 {
+font-size: 14.0PT;
+color: #434343;
+padding-top: 16.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h4 {
+font-size: 12.0PT;
+color: #666666;
+padding-top: 14.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h5 {
+font-size: 11.0PT;
+color: #666666;
+padding-top: 12.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h6 {
+font-size: 11.0PT;
+color: #666666;
+font-style: italic;
+padding-top: 12.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+.title {
+font-size: 26.0PT;
+padding-bottom: 3.0PT;
+direction: ltr;
+}
+.subtitle {
+font-family: Arial;
+font-size: 15.0PT;
+color: #666666;
+padding-bottom: 16.0PT;
+direction: ltr;
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">A Bug Hunter's Diary Review</a></li>
+        <li><a href="do-kids-still-read-computer-books%3F.html">Do kids still read computer books?</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content"><div style="clear: both;">&nbsp;</div><br><p class="normal_text" style='direction: ltr; '><span style=''>Do Kids Still Read Computer Books?
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>I still remember my first computer programming book. It was a glossy, black, brick of a book on PERL 5.&nbsp;&nbsp;I had started building web pages a few months prior, using the copy of Adobe PageMill that came with my bondi-blue iMac.&nbsp;&nbsp;It didn’t take long before I outgrew the “what you see is sort of what you get” interface of PageMill and started coding the HTML by hand.&nbsp;&nbsp;And it wasn’t long after that, that I entered the world of “copy-and-pasting Javascript” to gain a level of interactivity in my pages - or at least some scrolling status bar text.&nbsp;&nbsp;I started with a free Tripod account, but soon upgraded to “paid” so I could be rid of that pesky banner ad in the header.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>In those early days, I learned mostly by viewing the page source of other webpages, and tried to make sense of the HTML code.&nbsp;&nbsp; One of my first projects was a “Search Remote” - basically a popup </span><span style=''><em>search</em></span><span style=''> window </span><span style=''>where people could select from a list of popular (and unpopular) search engines, and enter a query.&nbsp;&nbsp;We provided links that Netscape and Internet Explorer users could drag up to their bookmarks bar to make it easy to open the remote.&nbsp;&nbsp;At the time, there were a few search engines, notably GoTo.com, that would pay you a penny or two for each search query, so I would place these engines first in the list, and wait to get rich.&nbsp;&nbsp;I didn’t get rich, but I did learn a lot about HTML, Javascript, and search engines, and I pushed up against their limitations pretty quickly.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Back then, all of the search engines were pretty bad, so it was common practice to do a sort of “pub crawl” through all the main ones until you found what you were looking for.&nbsp;&nbsp;You’d start with Altavista (the search engine with the largest index), then you’d try Excite and Yahoo.&nbsp;&nbsp;If you still didn’t find what you were looking for you might try Lycos, Infoseek, or even AskJeeves.&nbsp;&nbsp;This is where my Search Remote comes in.&nbsp;&nbsp;Rather than have to navigate to 6 different search engines’ websites, you could perform all the searches from one place.&nbsp;&nbsp;It worked pretty well, but It still required the user to perform separate queries for each search engine.&nbsp;&nbsp;I wondered if there was a way to let the user perform a single query and have all of the results from the different engines combined into a single result set. 
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Sometimes, when you’re stuck on a problem, the watershed moment is simply learning the correct terminology for what you want to accomplish.&nbsp;&nbsp;In my case, as I soon learned, the name for what I wanted to build was a “meta search engine”, and I was not the first person to conceive of such a thing.&nbsp;&nbsp;Meta-search engines would allow a user to submit a single search query to a server-side CGI script, which would relay the query to 5 or 6 major search engines, in the background, and return all of the results back to the user.&nbsp;&nbsp;Some of them would merge the results into a single set, and sort them according to its own relevancy algorithm.&nbsp;&nbsp;Others would keep the results separate, presenting them on a webpage organized by search engine.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Without a server-side script, it is really hard to write a meta-search engine.&nbsp;&nbsp;This was before AJAX, so the only way to load things from the server from Javascript was using submission forms, and frames.&nbsp;&nbsp;We didn’t even have iframes yet.&nbsp;&nbsp;I tried to build one using pure Javascript, but the results left something to be desired.&nbsp;&nbsp;The best I could do was create a window with a separate frame for each search engine.&nbsp;&nbsp;This worked okay when there were only two search engines, but anything more than that and your “productivity” gains get lost in the clutter of tiny frames.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>I think that most programmers have a certain resistance to learning new technologies, I was no different.&nbsp;&nbsp;I had cultivated familiarity with Javascript and HTML, but server-side programming was a remote country whose border crossings might as well have been guarded by barbed wire and machine guns.&nbsp;&nbsp;Not until I had exhausted all avenues on the Javascript side of that border, did I decide to venture forth into the untamed world of PERL.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>I started with things that were freely available online, such as the CGI specification, and the odd PERL tutorial.&nbsp;&nbsp;But the online ecosystem for programming tutorials was sparse, and discoverability was poor - nothing like today, where you can type in just about any programming topic you want, and find tutorials, examples, videos, tutorials, open source projects, and memes enough to keep you busy for months.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>One day in my travels, I came across a PERL meta-search script that someone had posted on Hotscripts (or some similar free cgi script site).&nbsp;&nbsp;I printed it out with my Epson 740 inkjet printer, and proceeded to study it.&nbsp;&nbsp;At the time, it was a completely foreign language to me.&nbsp;&nbsp;I recall curling up in bed, on the couch, and in the hot-tub for hours at a time with these pages, poring over it line by line, trying to understand what was going on.&nbsp;&nbsp;It was like one of those pictures they used to display in shopping malls, where, at first, it looks like just a mess of textures, but if you stare at it long enough, you start to see a 3-D image emerge.&nbsp;&nbsp; This script, which, at first, was just a sequence of gibberish, would start to reveal its structure to me in fleeting moments of clarity.&nbsp;&nbsp;
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>The hours I spent studying that script were important to my growth as a programmer.&nbsp;&nbsp;I still didn’t fully understand what everything meant, and I certainly couldn’t have written my own search script yet, but it did provide me with a feel for what PERL looked like and, strangely, what it felt like.&nbsp;&nbsp;I was ready to graduate to the next level: an actual computer programming book.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Did I mention that I was broke at the time.&nbsp;&nbsp;I had started making webpages just at the end of a six month failed entrepreneurial adventure with a friend, and I was down to about twenty dollars in my bank account on a good day.&nbsp;&nbsp;Luckily, I was living at </span><span style=''><em>Casa de my parents</em></span><span style=''> where rent was reasonable (free), but I didn’t have a lot of money to spend on frivolities.&nbsp;&nbsp;Or essentials.&nbsp;&nbsp;That was OK, because I was going to be getting rich from my search remote any day now. 
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>So, when I entered my local Chapters to shop for computer books, I might as well have been shopping for high priced commercial real estate, as both were out of my price range.&nbsp;&nbsp;Computer books went for anywhere from $60 to $120 depending on how “hot” or specialized the topic was.&nbsp;&nbsp;Lack of funds did not deter this dreamer, though. I scanned through the tables of contents of several dozen books, trying to identify the one that spoke most directly to my interests. When I was a child I used to spend hours examining the toys section of the Sears Christmas catalog, imagining what it would be like to have all of these cool toys and sets.&nbsp;&nbsp;This was </span><span style=''><em>that</em></span><span style=''>, except replace “Masters of the Universe” with “Mastering PERL”.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>After what seemed like minutes, but was probably closer to an hour, I had settled on this PERL book.&nbsp;&nbsp;It promised me close to a thousand pages of secrets that, up until now, the universe had greedily kept from me.&nbsp;&nbsp;All I had to do was figure out how to pay for it. A rich benefactor, perhaps?&nbsp;&nbsp;
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>That rich benefactor ended up being my Dad.&nbsp;&nbsp;I made a deal with him to build a website for his band if he bought the book for me.&nbsp;&nbsp;It was a win win.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>This book was my first real glimpse into the world of programming.&nbsp;&nbsp;Every page opened my eyes to new possibilities.&nbsp;&nbsp;Things I could build.&nbsp;&nbsp;With every new concept, my mind would start wandering to computer programs I had used in the past, and wondering if I could build something like them - or better.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>I could fill a school gymnasium with the spaghetti code that this book (and the hundreds that followed it) inspired.&nbsp;&nbsp;When I later got a job, I started buying a new computer book every payday.&nbsp;&nbsp;Sometimes three or four books.&nbsp;&nbsp;Books on Java, PERL, PHP, HTML, Flash, Servlets, Applets, Game development… you name it.&nbsp;&nbsp;I was hooked.&nbsp;&nbsp;When computer books became more affordable and discount stores like “Half-priced Computer Books” started popping up, I was no longer only buying books on topics that interested me.&nbsp;&nbsp;I began buyings books that I might </span><span style=''><em>someday</em></span><span style=''> be interested in.&nbsp;&nbsp;I thought I’d won the lottery when, one day, I found a bookstore that was going out of business, and the owner said I could fill 4 big boxes with books for only $100.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Side note: See my post about that time I wanted Star Wars on LaserDisc but ended up with more than I had bargained for.&nbsp;&nbsp;Same personality traits seemed to dominate there as did here.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>We are now almost twenty years removed from the computer books hay day. Book stores stock a paltry few books on programming now, and buying books on Amazon isn’t the same.&nbsp;&nbsp;I like to be able to pick up a book, thumb through it, and, um,&nbsp;&nbsp;</span><span style=''><em>smell</em></span><span style=''> it before I buy it.&nbsp;&nbsp;It’s not a purchase - it’s an experience.&nbsp;&nbsp;
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>I still frequent the computer books section of Value Village to see if I find anything interesting.&nbsp;&nbsp;Some recent hauls included The Macintosh Bible (7th Edition, 1998), Core Web3D (1999), and Core Swing Advanced Programming (2000).&nbsp;&nbsp;I love reading the preface and introduction sections.&nbsp;&nbsp;They add history and context to these old technologies, and serve as a sort of time capsule that reveals how the world looked to software developers at that time.&nbsp;&nbsp;I love reading 20+ year old predictions about the future, and laughing about how wrong they were, or marvelling at how spot-on they were.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>I wonder, if I were just getting started now, would I still gravitate towards the thousand-page textbook as a preferred method of learning?&nbsp;&nbsp;Or would I just watch a Youtube video.&nbsp;&nbsp;Information is so much more accessible than it was in the nineteen hundreds and there are many new forms of media that are available.&nbsp;&nbsp;There are online communities, question/answer sites, online courses, and video tutorials for just about everything imaginable on Youtube.&nbsp;&nbsp;For </span><span style=''><em>free</em></span><span style=''>!&nbsp;&nbsp;I suspect that “kids” these days don’t even bother with books.&nbsp;&nbsp;If that’s the case, then oh what a shame.&nbsp;&nbsp;They are missing out on a rich, comprehensive, noise-free medium that gives pure escape from the real world.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>I’m not sure how many computer books I currently own.&nbsp;&nbsp;Probably more than 200 and less than a thousand.&nbsp;&nbsp;Most of them are stored away in boxes, spread between my parents’ basement, my garage, my furnace room, and my office, but few coveted titles still enjoy the prestige of sitting on my bookshelf.&nbsp;&nbsp;
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>The Search Remote didn’t exactly strike gold, but I have high hopes for my most recent project, Tuxpin, which builds on my love for audiobooks and podcasts, allowing you to listen to webpages in your podcast app.&nbsp;&nbsp;That project was built using many of the same technologies that I learned how to use at the beginning of my programming journey.&nbsp;&nbsp;PHP, MySQL, and Java. Sadly, it doesn’t contain a single line of PERL.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Footnote:
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>I might have the original files for the search remote still stashed away on some 4 gigabyte hard drive, but it would require a lot of effort to retrieve it.&nbsp;&nbsp;But, in the same spirit that supplanted reference books with Google+Stack Overflow, I decided to do a quick search on the Wayback machine to see if it had any record of my debut web project.&nbsp;&nbsp;To my delight, they had both my “Homepage” project, and the search remote project.&nbsp;&nbsp;They are missing most of the images, but the page structure is there, and the search engine select lists are intact so you can see which search engines we supported.&nbsp;&nbsp;I’m impressed at the comprehensive list that I amassed.&nbsp;&nbsp;I must have had a lot of time on my hands.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Search Homepage: </span><span style='color: #1155cc; '><a href="https://web.archive.org/web/20001206220400/http://search.ob.nu/">https://web.archive.org/web/20001206220400/http://search.ob.nu/</a></span><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Search Remote: https://web.archive.org/web/20010519093241/http://searchremote.ob.nu/</span><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>
