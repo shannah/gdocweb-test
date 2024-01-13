@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Bug Hunter's Diary Review</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    
+.normal_text {
+font-family: Arial;
+font-size: 11.0PT;
+color: #000000;
+line-height: 1.15;
+direction: ltr;
+}
+h1 {
+font-size: 24.0PT;
+font-weight: bold;
+padding-top: 24.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+h2 {
+font-size: 18.0PT;
+font-weight: bold;
+padding-top: 18.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h3 {
+font-size: 14.0PT;
+font-weight: bold;
+padding-top: 14.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+h4 {
+font-size: 12.0PT;
+font-weight: bold;
+padding-top: 12.0PT;
+padding-bottom: 2.0PT;
+direction: ltr;
+}
+h5 {
+font-size: 11.0PT;
+font-weight: bold;
+padding-top: 11.0PT;
+padding-bottom: 2.0PT;
+direction: ltr;
+}
+h6 {
+font-size: 10.0PT;
+font-weight: bold;
+padding-top: 10.0PT;
+padding-bottom: 2.0PT;
+direction: ltr;
+}
+.title {
+font-size: 36.0PT;
+font-weight: bold;
+padding-top: 24.0PT;
+padding-bottom: 6.0PT;
+direction: ltr;
+}
+.subtitle {
+font-family: Georgia;
+font-size: 24.0PT;
+color: #666666;
+font-style: italic;
+padding-top: 18.0PT;
+padding-bottom: 4.0PT;
+direction: ltr;
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">A Bug Hunter's Diary Review</a></li>
+        <li><a href="do-kids-still-read-computer-books%3F.html">Do kids still read computer books?</a></li>
+    </ul>
+    </nav>
+</header>
+<div class="content"><div style="clear: both;">&nbsp;</div><br><p class="normal_text" style='direction: ltr; '><span style=''>A Bug Hunter’s Diary: A Guided Tour Through the Wilds of Sofware Security
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>A Bug Hunter’s Diary is written as a journal of a “Bug Hunter”.&nbsp;&nbsp;It takes us through seven bugs that the author (Tobias Klein) has discovered in the past five years, giving the reader a glimpse of his process and an awareness of how easily bugs can creep into even the most carefully written software.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>All of the bugs discussed in this book are related to memory errors that lead to a proofs of exploit that involve overwriting the program counter (and thus hijack subsequent program execution with arbitrary code).&nbsp;&nbsp;This narrow focus sets the stage for a book that is very heavy on Assembly code, debuggers, and a few easily compromisable C functions.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>Some of the bugs involve open source software so we have source code to step through, but others provide nothing more than the finished binary to step through with a debugger and a disassembly of the machine code.&nbsp;&nbsp;For someone who doesn’t do much C programming anymore and hasn’t done Assembly in over 10 years, such as myself, the journey can be quite daunting.&nbsp;&nbsp;The guide on this journey stops occasionally to explain his intuition for certain decisions, but we’re largely left to just follow him along without really knowing how he knew to check for certain things and not others.&nbsp;&nbsp;After following him on 7 missions, however, some patterns do become evident.&nbsp;&nbsp;This repetition enables the reader to feel like more of a partner in the later journeys to contrast his bystander role in the first few.
+</span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>Being primarily a Java, PHP, and Javascript developer of late, the tools and languages used in this book (Assembly and Debuggers) really stretched my ability to follow along in real-time.&nbsp;&nbsp;It reminded me a little of the first few computer programming books I picked up as a newby when I would be reading pages and pages of code and waiting (hoping) for the eureka moment when all the code would make sense.&nbsp;&nbsp;Like listening to an old song from my past,&nbsp;&nbsp;this feeling of having to follow the master and just have faith that things would make sense if I just stared a little longer, opened a flood of memories of my first days in programming.&nbsp;&nbsp;I’m thankful to the author for that.&nbsp;&nbsp;
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>If you can think of my train of thought during the reading of this book as a process, then this process had a few different threads running in parallel.&nbsp;&nbsp;In one thread, I was just trying to follow the Bug Hunter and understand the lessons as they were presented.&nbsp;&nbsp;In another thread I was trying to identify analogs in these lessons to my own domain of programming (e.g. web programming, and database programming).&nbsp;&nbsp;There were also a&nbsp;&nbsp;thread that was periodically assessing the author’s style and the the book’s relevance, to various target audiences, and its importance to software.
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>Thread 1: Just trying to keep up
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>If I had read this book as a tutorial where I actually do as the author says, it would have taken me a lot longer to read.&nbsp;&nbsp;At a certain point I just settled for getting the gist of what he was doing and focused more mental cycles to Thread 2.
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>Thread 2: Applying the Lessons to My Domain
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>The process that Klein uses to track down bugs serves as a forceful reminder of how bugs could slip into my own software if I’m not careful.&nbsp;&nbsp;In trying to exploit memory errors, Klein would focus on the interfaces between user space and kernel space as logically any exploit must pass through one of these bridges at some point.&nbsp;&nbsp; There is an analog in any programming environment.&nbsp;&nbsp;In web development you are looking for the entry points where user input is passed to the application.&nbsp;&nbsp; This book is a reminder that you must always be conscious of where data could possibly have come from before working with it as it is often a combination of small glitches that result in a large exploit down the road.
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>Thread 3: The Author’s Style
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>Klein writes much of this book as a sort of diary of his actions.&nbsp;&nbsp;As such it is more like a day in the life of a bug hunter than it is a tutorial on how to become a bug hunter.&nbsp;&nbsp;This style works well for imparting an authentic view of what a bug hunter really does - and as such might serve as inspiration for those who want to follow this craft.
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>At times (more early on than later) I struggled to grapple with the direction Klein was taking us.&nbsp;&nbsp;Is he just reciting his exploits as a way of bragging, or is he recounting his steps and building up to an eventual purpose.&nbsp;&nbsp; Throughout the second and third bugs I was bogged down a little with thoughts like “this is way too dense in Assembly for the average person”, but these would be countered with rebuttle thoughts like “but this isn’t intended for the average person...”.&nbsp;&nbsp;As I settled in, though, these thoughts were replaced by less critical internal commentary like “wow, it would be really easy to make that mistake” or “that’s really neat!”
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>By the time I reached the sixth and seventh bugs and I had seen the same types of bugs appear over and over, I had become a true believer.&nbsp;&nbsp;Not only was this book interesting; It was essential!&nbsp;&nbsp;Despite the lip service that is paid to “good programming practice” in computing science programs, I have never been made so acutely aware of some of the simple programming mistakes that can result in dreadful consequences.&nbsp;&nbsp;As I finished the seventh bug, the one clear capstone thought was that this book should be required reading to anyone who wants to write any software.&nbsp;&nbsp;Just as engineers are required to take an ethics course, computer scientists should be *required* to take a “Bug Hunters” course - if for no other reason than to raise their awareness of the nature of bugs. 
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>When I think about the “buggy” code that I have read from new University grads it makes me shiver. Much of this buggy code is in production around the world and quite often the develop has no idea that the bugs are there.&nbsp;&nbsp;This book highlights a few specific functions to handle with great care in C, but every language has its own set of traps that all new programmers fall into.&nbsp;&nbsp;(E.g. in PHP registering global variables, unvalidated input to SQL queries leading to SQL injection, etc...).&nbsp;&nbsp;Computer books very rarely spend much time highlighting these traps, and as a result young programmers regularly fall into them.&nbsp;&nbsp;Unfortunately with software these traps often don’t give immediate feedback.&nbsp;&nbsp;Instead they linger for years before they are exploited - and sometimes to great disaster.
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>Summary
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>I meandered a bit in this review, but to summarize.&nbsp;&nbsp;If you can slog through the dense debugger readouts and assembly code and latch onto the core message in this book you will become a better software developer.&nbsp;&nbsp;Even if you don’t learn anything new in this book, it will serve to raise your awareness and prevent a bug.&nbsp;&nbsp;
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>
+</span></p><p class="normal_text" style='line-height: 1.15; direction: ltr; '><span style=''>And one more thing:&nbsp;&nbsp;</span><span style=''><strong>This book should be required reading for new software developers.
+</strong></span></p><p class="normal_text" style='direction: ltr; '><span style=''>
+</span></p>
+</div><footer>
+    Created for free by
+    <a href="https://gdocweb.com" target="_blank">gdocweb</a>. <br>
+    Convert Google Docs files to full fledged websites <b>for free</b>.
+</footer>
+<script>
+function toggleMenu() {
+    var header = document.querySelector('header');
+    header.classList.toggle('nav-active');
+}
+
+function toggleSubmenu(event, submenuId) {
+    var submenu = document.getElementById(submenuId);
+    var parentLi = submenu.parentElement;
+    parentLi.classList.toggle('submenu-active');
+    event.stopPropagation();
+}
+
+window.onclick = function(event) {
+    var submenus = document.getElementsByClassName("submenu");
+    for (var i = 0; i < submenus.length; i++) {
+        var parentLi = submenus[i].parentElement;
+        if (!parentLi.contains(event.target)) {
+            parentLi.classList.remove('submenu-active');
+        }
+    }
+}
+</script>
+</body>
+</html>
